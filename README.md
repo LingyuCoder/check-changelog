@@ -19,6 +19,27 @@ $ npm install --save check-changelog
 
 ## Usage
 
+Promise check(String:cwd)
+
+```javascript
+const checker = require('check-changelog');
+checker('/Users/xxx/project_dir') // default process.cwd()
+  .then(result => {
+    /*
+    result = {
+      // check result
+      success: true|false
+    }
+    */
+    if(result.success)
+      console.log('Passed');
+    else
+      console.log(`Please add your changes into changelog.md or history.md`);
+  })
+  .catch(e => console.error(e.message));
+```
+
+
 ## Test
 
 ```bash
