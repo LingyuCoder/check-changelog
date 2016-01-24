@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+'use strict';
+
+const checker = require('../');
+checker()
+  .then(result => {
+    if (result.success)
+      process.exit(0);
+    else {
+      console.log(`Please add your changes into CHANGELOG.md `);
+      process.exit(1);
+    }
+  })
+  .catch(e => console.error(e.message));
