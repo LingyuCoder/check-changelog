@@ -1,6 +1,6 @@
 {
   "name": "check-changelog",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Check that changes of current version had been logged in chanagelog.md or history.md",
   "main": "index.js",
   "scripts": {
