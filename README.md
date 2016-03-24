@@ -19,6 +19,18 @@ $ npm install --save check-changelog
 
 ## Usage
 
+### CLI
+
+Can be called from an npm lifecycle script
+
+```javascript
+"scripts": {
+  "prepublish": "check-changelog"
+}
+```
+
+### Javascript
+
 Promise check(String:cwd)
 
 ```javascript
